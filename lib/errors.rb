@@ -1,3 +1,7 @@
 module UdaciListErrors
-  # Error classes go here
+  class ErrorName < StandardError
+    # if something_bad_happens
+    #   raise ModuleName::ErrorName, "Scanner Communication Error..."
+    # end
+  end
 end

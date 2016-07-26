@@ -11,3 +11,14 @@
 2. What was the most rewarding challenge you conquered?
 3. What two additional features did you build? Why?
 4. Where do you still have room to grow?
+
+-------------Notes to Self------------------------------
+1) Refactor
+  format_date-This method should take in either 1 or 2 dates since TodoItem
+  requires formatting 1 date, while EventItem could have up to 2 dates
+  format_priority
+2) error.rb- group together all your error message classes. Code in app.rb should test error messages
+Add error checking to the add and delete methods that raise errors when:
+The user tries to add an unsupported item type
+The user tries to delete an item from the list that exceeds the boundaries of the list (e.g., tries to delete item #4 when there are only 3 items in the list)
+Tries to set an item’s priority to an invalid value (e.g., priority: “💩”)
