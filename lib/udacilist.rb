@@ -23,4 +23,15 @@ class UdaciList
       puts "#{position + 1}) #{item.details}"
     end
   end
+
+  private
+
+  def add_to_list
+    # return error message "This Item Type does not exists. (InvalidItemType)"
+    if @items.map { |item| item.description }.exclude? type =="todo" || type =="event" || type =="link"
+      raise UdaciListErrors::InvalidItemType, "This type does not exist"
+    else
+      initialize << self
+    end
+  end
 end
