@@ -1,8 +1,10 @@
 module UdaciListErrors
   class InvalidItemType < StandardError
-    # if invalid_type
-    #   raise ModuleName::ErrorName, "Scanner Communication Error..."
-    # end
+    if @items.select { |item| item.type }.include? type
+      UdaciList.add
+    else
+      raise UdaciListErrors::InvalidItemType, "This type does not exist"
+    end
   end
 
   class IndexExceedsListSize < StandardError

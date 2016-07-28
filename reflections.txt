@@ -8,6 +8,10 @@
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
+I took a REALLY long break between this project and the last (2 months) so its taken quite a bit of time to get back into the context of the lessons. So far I've spent about 3 days or so working on this project.
 2. What was the most rewarding challenge you conquered?
+None yet so far. Still trying to get my bearings. I really like Ruby gems though.
 3. What two additional features did you build? Why?
+None yet so far!
 4. Where do you still have room to grow?
+Inheriting legacy code and refactoring is REALLY hard. It feels like begin helicopter dropped into an ocean and needing to learn how to swim while sharks are attacking.
