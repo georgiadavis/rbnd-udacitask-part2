@@ -3,13 +3,13 @@ module Listable
     "#{description}".ljust(30)
   end
 
-  # def format_date
-  #   @due ? @due.strftime("%D") : "No due date"
-  #   dates = @start_date.strftime("%D") if @start_date
-  #   dates << " -- " + @end_date.strftime("%D") if @end_date
-  #   dates = "N/A" if !dates
-  #   return dates
-  # end
+  def format_date
+      dates = @due ? @due.strftime("%D") : "No due date"
+      dates = @start_date.strftime("%D") if @start_date
+      dates << " -- " + @end_date.strftime("%D") if @end_date
+      dates = "N/A" if !dates
+      return dates
+  end
 
   def format_priority
     value = " ⇧" if @priority == "high"
