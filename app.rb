@@ -17,11 +17,11 @@ list.add("event", "Vacation", start_date: "2016-05-28", end_date: "2016-05-31")
 list.add("link", "https://github.com", site_name: "GitHub Homepage")
 list.all
 list.delete(3)
-# list.all
+list.all
 
 # SHOULD CREATE AN UNTITLED LIST AND ADD ITEMS TO IT
 # --------------------------------------------------
-new_list = UdaciList.new # Should create a list called "Untitled List"
+new_list = UdaciList.new(title: "Untitled List") # Should create a list called "Untitled List"
 new_list.add("todo", "Buy more dog food", due: "in 5 weeks", priority: "medium")
 new_list.add("todo", "Go dancing", due: "in 2 hours")
 new_list.add("todo", "Buy groceries", priority: "high")
@@ -39,7 +39,7 @@ new_list.add("link", "http://ruby-doc.org")
 
 # DISPLAY UNTITLED LIST
 # ---------------------
-# new_list.all
+new_list.all
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
