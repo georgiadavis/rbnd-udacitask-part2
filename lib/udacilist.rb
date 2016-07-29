@@ -6,6 +6,10 @@ class UdaciList
     @title = options[:title]
     @items = []
   end
+
+  def type_test
+    .include?
+
   def add(type, description, options={})
     type = type.downcase
     @items.push TodoItem.new(description, options) if type == "todo"
@@ -26,12 +30,7 @@ class UdaciList
 
   private
 
-  def add_to_list
-    # return error message "This Item Type does not exists. (InvalidItemType)"
-    if @items.map { |item| item.description }.exclude? type =="todo" || type =="event" || type =="link"
+  def type_check(types)
       raise UdaciListErrors::InvalidItemType, "This type does not exist"
-    else
-      initialize << self
-    end
   end
 end

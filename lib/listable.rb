@@ -1,5 +1,6 @@
 module Listable
   def format_description(description)
+    p description
     "#{description}".ljust(30)
   end
 
