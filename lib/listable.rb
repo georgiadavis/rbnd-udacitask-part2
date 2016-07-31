@@ -1,6 +1,6 @@
 module Listable
   def format_description(description)
-    "#{@description}".ljust(20)
+    "#{description}".ljust(20)
   end
 
   def format_date
