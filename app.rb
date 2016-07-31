@@ -1,6 +1,6 @@
 require 'chronic'
 require 'colorize'
-require 'terminal-table'
+require 'artii'
 require_relative "lib/listable"
 require_relative "lib/errors"
 require_relative "lib/udacilist"
