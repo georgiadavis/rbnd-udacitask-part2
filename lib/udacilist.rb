@@ -10,14 +10,13 @@ class UdaciList
   def add(type, description, options={})
     type = type.downcase
     raise UdaciListErrors::InvalidItemType unless ["todo", "event", "link"].include? type
-    # raise UdaciListErrors::InvalidPriorityValue unless ["high", "medium", "low"].include? options
     @items.push TodoItem.new(description, options) if type == "todo"
     @items.push EventItem.new(description, options) if type == "event"
     @items.push LinkItem.new(description, options) if type == "link"
   end
-  def delete(index)
-    raise UdaciListErrors::IndexExceedsListSize unless index < @items.length
-    @items.delete_at(index - 1)
+  def delete(list_index)
+    raise UdaciListErrors::IndexExceedsListSize unless list_index < @items.length
+    @items.delete_at(list_index - 1)
   end
   def all
     puts "-" * @title.length
