@@ -8,7 +8,7 @@
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
-I took a REALLY long break between this project and the last (2 months) so its taken quite a bit of time to get back into the context of the lessons. So far I've spent about 3 days or so working on this project.
+I took a REALLY long break between this project and the last (2 months) so its taken quite a bit of time to get back into the context of the lessons. So far I've spent about a week or so working on this project.
 2. What was the most rewarding challenge you conquered?
 None yet so far. Still trying to get my bearings. I really like Ruby gems though.
 3. What two additional features did you build? Why?

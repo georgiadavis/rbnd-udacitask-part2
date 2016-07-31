@@ -15,6 +15,7 @@ class UdaciList
     @items.push LinkItem.new(description, options) if type == "link"
   end
   def delete(index)
+    raise UdaciListErrors::IndexExceedsListSize unless index < @items.length
     @items.delete_at(index - 1)
   end
   def all
