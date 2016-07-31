@@ -7,11 +7,9 @@ class UdaciList
     @items = []
   end
 
-  def type_test
-    .include?
-
   def add(type, description, options={})
     type = type.downcase
+    raise UdaciListErrors::InvalidItemType unless ["todo", "event", "link"].include? type
     @items.push TodoItem.new(description, options) if type == "todo"
     @items.push EventItem.new(description, options) if type == "event"
     @items.push LinkItem.new(description, options) if type == "link"
@@ -26,11 +24,5 @@ class UdaciList
     @items.each_with_index do |item, position|
       puts "#{position + 1}) #{item.details}"
     end
-  end
-
-  private
-
-  def type_check(types)
-      raise UdaciListErrors::InvalidItemType, "This type does not exist"
   end
 end
