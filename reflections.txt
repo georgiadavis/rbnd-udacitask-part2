@@ -1,10 +1,10 @@
 # What you added to Udacitask 2.0
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
-Terminal Table: I made my output in a table format.
+Terminal Table: I used this gem to get my output in rows
 2. Describe the 2 features you added to the project.
-  a) Feature 1...
-  b) Feature 2...
+  a) Feature 1...not done yet
+  b) Feature 2...not done yet
 
 # REFLECTIONS
 # -------------------------------------------------------
