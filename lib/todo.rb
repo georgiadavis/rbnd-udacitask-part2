@@ -6,7 +6,7 @@ class TodoItem
     @description = description
     @due = options[:due] ? Chronic.parse(options[:due]) : options[:due]
     @priority = options[:priority]
-    # raise UdaciListErrors::InvalidPriorityValue unless ["high", "medium", "low"].include? @priority
+    raise UdaciListErrors::InvalidPriorityValue unless ["high", "medium", "low", nil].include? @priority
   end
 
   def details
