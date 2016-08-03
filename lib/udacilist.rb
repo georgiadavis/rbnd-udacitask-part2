@@ -29,4 +29,7 @@ class UdaciList
       puts table
     end
   end
+  def filter(type)
+     @items.select {|item| item.type == type}
+  end
 end
