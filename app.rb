@@ -44,3 +44,15 @@ new_list.all
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
 new_list.filter("event")
+
+
+# ADDITIONAL FEATURE #1: COLORIZE
+# Choose from: black, light_black, red, light_red, green, light_green
+# yellow, light_yellow, blue, light_blue, magenta, light_magenta, cyan,
+# light_cyan, white, light_white, default
+# ------------------------
+new_list.color_change("light_magenta")
+list.color_change("light_cyan")
+
+# ADDITIONAL FEATURE #2
+# ------------------------
