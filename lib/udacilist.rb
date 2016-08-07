@@ -30,8 +30,16 @@ class UdaciList
     end
   end
   def filter(type)
-     @items.select {|item| item.type == type}
+    @items.each do |item|
+      if item.type == type
+        rows = []
+        rows << ["#{item.type}"," #{item.details}"]
+        table = Terminal::Table.new :rows => rows
+        puts table
+      end
+    end
   end
+
   def color_change(color)
       puts "-".colorize(:"#{color}") * @title.length
       puts @title
@@ -43,4 +51,5 @@ class UdaciList
         puts table
       end
   end
+
 end
