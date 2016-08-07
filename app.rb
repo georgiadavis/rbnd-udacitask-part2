@@ -51,8 +51,8 @@ new_list.filter("event")
 # yellow, light_yellow, blue, light_blue, magenta, light_magenta, cyan,
 # light_cyan, white, light_white, default
 # ------------------------
-# new_list.color_change("light_magenta")
-# list.color_change("light_cyan")
+new_list.color_change("light_magenta")
+list.color_change("light_cyan")
 
 # ADDITIONAL FEATURE #2
 # ------------------------
