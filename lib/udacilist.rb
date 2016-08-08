@@ -15,10 +15,10 @@ class UdaciList
     @items.push LinkItem.new(type, description, options) if type == "link"
   end
   def delete(list_index)
-    raise UdaciListErrors::IndexExceedsListSize unless list_index < @items.length
+    raise UdaciListErrors::IndexExceedsListSize unless list_index <= @items.length
     @items.delete_at(list_index - 1)
   end
-  def all
+  def all()
     puts "-" * @title.length
     puts @title
     puts "-" * @title.length
@@ -52,7 +52,7 @@ class UdaciList
       end
   end
 
-  def completed(description)
+  def delete_by_description(description)
     # removes item when completed
     @items.each do |item|
       if item.description == description
@@ -60,5 +60,5 @@ class UdaciList
       end
     end
   end
-  
+
 end
