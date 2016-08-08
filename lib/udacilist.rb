@@ -60,6 +60,5 @@ class UdaciList
       end
     end
   end
-
-
+  
 end

@@ -4,7 +4,7 @@
 Terminal Table: I used this gem to get my output in rows
 2. Describe the 2 features you added to the project.
   a) Feature 1: Change color of text in table
-  b) Feature 2: 
+  b) Feature 2: Delete item when completed
 
 # REFLECTIONS
 # -------------------------------------------------------
