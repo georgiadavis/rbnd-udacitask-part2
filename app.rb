@@ -55,4 +55,7 @@ new_list.color_change("light_magenta")
 list.color_change("light_cyan")
 
 # ADDITIONAL FEATURE #2
+# Item is removed when marked as completed
 # ------------------------
+new_list.completed("Buy more dog food")
+new_list.all

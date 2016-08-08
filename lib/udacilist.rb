@@ -52,6 +52,14 @@ class UdaciList
       end
   end
 
-  
+  def completed(description)
+    # removes item when completed
+    @items.each do |item|
+      if item.description == description
+        items.delete(item)
+      end
+    end
+  end
+
 
 end
